@@ -378,6 +378,30 @@ body {
   fill: var(--first-color);
   transition: fill var(--transition);
 }
+/*
+  footer social color icons
+*/
+.footer__social .social__item .icon .first__svg {
+  fill: rgba(255, 255, 255, 0.1);
+  transition: fill var(--transition);
+}
+
+.footer__social .social__item .icon .second__svg {
+  fill: var(--first-color);
+  transition: fill var(--transition);
+}
+
+.social__item:hover .icon .first__svg,
+.social__item:focus .icon .first__svg {
+  fill: var(--second-color);
+  transition: fill var(--transition);
+}
+
+.social__item:hover .icon .second__svg,
+.social__item:focus .icon .second__svg {
+  fill: var(--first-color);
+  transition: fill var(--transition);
+}
 /* 
 =====================================
 =====================================
@@ -866,3 +890,4 @@ body {
 .image__box:hover .image__text {
   transform: translateY(0);
 }
+
